@@ -1,0 +1,6 @@
+<section class="family-list">
+    @for(member of family; track member.name)
+    {
+        <app-family-member [familyMember]="member"></app-family-member>
+    }
+</section>

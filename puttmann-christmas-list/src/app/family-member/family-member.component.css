@@ -1,0 +1,10 @@
+.member
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 25vw;
+    width: 25vw;
+    border: solid black 1px;
+    text-align: center;
+}

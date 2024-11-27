@@ -1,10 +1,19 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
+  imports: [RouterModule],
+  template: `
+    <main>
+      <header class="header">
+        <h1>Puttmann Christmas Lists</h1>
+      </header>
+    </main>
+    <section>
+      <router-outlet></router-outlet>
+    </section>
+  `,
   styleUrl: './app.component.css'
 })
 export class AppComponent {
