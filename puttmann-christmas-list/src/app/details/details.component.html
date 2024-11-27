@@ -1,1 +1,6 @@
-<p>details works!</p>
+<header class="header">
+    <h1>{{familyMember?.name}}</h1>
+</header>
+<section class="gift-grid">
+    <app-gift *ngFor="let gift of familyMember?.gifts" [gift]="gift"></app-gift>
+</section>
