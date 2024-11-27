@@ -1,5 +1,4 @@
-<section class="gift">
+<section class="gift" (click)="openLink(gift.link)">
     <h2>{{gift.name}}</h2>
     <p>{{gift.description}}</p>
-    <a [href]="gift.link" target="_blank">{{gift.link}}</a>
 </section>

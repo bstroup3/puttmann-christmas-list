@@ -9,4 +9,9 @@ import { Gift } from '../gift';
 })
 export class GiftComponent {
   @Input() gift!: Gift;
+
+  openLink(link: string)
+  {
+    window.open(link, '_blank');
+  }
 }

@@ -1,4 +1,4 @@
-<section class="member">
-{{familyMember.name}}
-<a [routerLink]="['/', familyMember.id]">Go to wishlist</a>
+<section class="member" (click)="navigateToWishlist()">
+    <h1 class="member-name">{{familyMember.name}}</h1>
+    <!-- <a [routerLink]="['/', familyMember.id]">Go to wishlist</a> -->
 </section>

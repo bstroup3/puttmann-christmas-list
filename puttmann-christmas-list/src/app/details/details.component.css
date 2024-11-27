@@ -1,0 +1,12 @@
+.header
+{
+    text-align: center;
+    font-size: 2vw;
+}
+
+.gift-grid
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2vw;
+}
