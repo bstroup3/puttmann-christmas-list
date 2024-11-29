@@ -1,4 +1,4 @@
-import { Component, Input} from '@angular/core';
+import { Component, Input, inject} from '@angular/core';
 import { FamilyMember } from '../family-member';
 import { Router } from '@angular/router';
 
@@ -10,11 +10,9 @@ import { Router } from '@angular/router';
 })
 export class FamilyMemberComponent {
   @Input() familyMember!: FamilyMember;
-
-  constructor(private router : Router){}
-
+  router = inject(Router)
   navigateToWishlist()
   {
-    this.router.navigate(['/', this.familyMember.id]);
+    this.router.navigateByUrl(`/${this.familyMember.id}`);
   }
 }
